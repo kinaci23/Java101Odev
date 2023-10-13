@@ -1,0 +1,21 @@
+# Java101Odev
+import java.util.Scanner;
+
+public class KdvHesaplama {
+    public static void main(String[] args) {
+
+        double tutar;
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Tutarı Giriniz :");
+        tutar = input.nextDouble();
+
+        double kdvTutari =  (tutar * 0.18);
+        double kdvliTutar = (tutar + kdvTutari);
+
+        System.out.println("Kdvsiz Tutar : " + tutar);
+        System.out.println("Kdv Tutarı : " + kdvTutari);
+        System.out.println("Kdvli Tutar : " + kdvliTutar);
+
+    }
+}
