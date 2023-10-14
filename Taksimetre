@@ -1,0 +1,22 @@
+# Java101Odev
+import java.util.Scanner;
+
+public class Taksimetre {
+    public static void main(String[] args) {
+
+        int km, acilisucreti;
+        acilisucreti = 10;
+        double kmucret = 2.20;
+
+        Scanner giris = new Scanner(System.in);
+        System.out.println("Gidilecek mesafe kaç KM ?");
+        km = giris.nextInt();
+
+        double ucret = (acilisucreti + (km*kmucret));
+
+        ucret = (ucret < 20) ? 20 : ucret;
+
+        System.out.println("Toplam Tutar : " + ucret + "TL");
+
+    }
+}
