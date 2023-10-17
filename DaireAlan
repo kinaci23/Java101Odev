@@ -1,0 +1,30 @@
+# Java101Odev
+import java.util.Scanner;
+
+public class Daire {
+    public static void main(String[] args) {
+
+        double pi = 3.14;
+        int yariCap;
+
+        Scanner input = new Scanner(System.in);
+        System.out.println("Yarıçap ?");
+
+        yariCap = input.nextInt();
+
+        int a;
+
+        System.out.println("Merkez Açısının Ölçüsü ? ");
+        a = input.nextInt();
+
+        double alan = (pi*(yariCap*yariCap));
+        double cevre = (2*pi*yariCap);
+        double alan2 = (pi*(yariCap*yariCap)*a)/360;
+
+        System.out.println("Yarıçapı " + yariCap + "," + "Merkez açısının ölçüsü " + a + " olan daire diliminin alanı " + alan2);
+        System.out.println("ALAN :" + alan);
+        System.out.println("ÇEVRE :" + cevre);
+
+
+    }
+}
