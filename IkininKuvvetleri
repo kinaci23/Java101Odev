@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class IkininKuvvetleri {
+    public static void main(String [] args){
+        int n;
+        Scanner giris = new Scanner(System.in);
+        System.out.print("sınır sayısını giriniz: ");
+        n = giris.nextInt();
+
+        for (int i=1;i<=n;i*=2){
+            System.out.println(i);
+        }
+    }
+}
