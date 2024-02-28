@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Faktoriyel {
+    public static void main(String[] args){
+        int n;
+        int total = 1;
+        Scanner giris = new Scanner(System.in);
+        System.out.print("Hesaplanacak Faktöriyel Sayısını Giriniz: ");
+        n=giris.nextInt();
+
+        for (int i = 1; i <= n;i++){
+            total = total*i;
+        }
+        System.out.println(n+"! = "+total);
+    }
+}
