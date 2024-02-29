@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class BasToplam {
+    public static void main(String [] args){
+        Scanner input = new Scanner(System.in);
+        System.out.println("-- GİRİLEN SAYININ BASAMAKLARI TOPLAMI --");
+        System.out.print("BİR SAYI GİRİNİZ:");
+
+        int sayi = input.nextInt();
+        int basToplam = 0;
+
+        while (sayi>0){
+            basToplam += sayi%10;
+            sayi/=10;
+        }
+        System.out.println("BASAMAK TOPLAMI = "+basToplam);
+
+    }
+}
